@@ -1,0 +1,161 @@
+* {
+    transition: .4s;
+}
+
+/* socialmedia btn */
+.section-title {
+    text-transform: capitalize;
+}
+
+.icon-bar {
+    position: fixed;
+    z-index: 4;
+    top: 60%;
+    right: 0px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+}
+
+.facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.instagram {
+    background: #962fbf;
+    color: white;
+}
+
+.youtube {
+    background: #bb0000;
+    color: white;
+}
+
+/* slider */
+.ltn__slider-area.ltn__slider-3.section-bg-1 .slick-prev.slick-arrow,
+.ltn__slider-area.ltn__slider-3.section-bg-1 .slick-next.slick-arrow {
+    top: 50%;
+}
+
+.ltn__slide-item.ltn__slide-item-2.ltn__slide-item-3-normal---.ltn__slide-item-3.bg-image.bg-overlay-theme-black-60--- {
+    background-size: cover;
+}
+
+.ltn__header-top-area {
+    border-bottom-color: #1ca553 !important;
+}
+
+.ltn__social-media i {
+    color: #1ca553 !important;
+}
+
+.ltn__product-item.ltn__product-item-3.text-center {
+    border-radius: 10px;
+}
+
+.product-img img {
+    transition: all ease 1.5s;
+}
+
+.ltn__product-item:hover .product-img img {
+    scale: 1.25;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.product-btn {
+    border: 1px solid #1ca553;
+    border-radius: 10px;
+}
+
+.product-btn:hover {
+    box-shadow: 0 16px 32px 0 rgba(7, 28, 31, 0.1);
+}
+
+.ltn__about-us-area.bg-image-left-before::before {
+    background-image: url('../image/about-us/about-health-medical-medicine.jpg') !important;
+}
+
+.ltn__footer-area .ltn__social-media ul li i {
+    color: #5c727d !important;
+}
+
+.theme-btn-1 {
+    border-color: #1ca553 !important;
+}
+
+.slick-next.slick-arrow,
+.slick-prev.slick-arrow {
+    top: 25%;
+    background-color: #1ca553;
+    border: 0px !important;
+    color: #fff !important;
+}
+
+.slick-next.slick-arrow:hover,
+.slick-prev.slick-arrow:hover {
+    background-color: #fff;
+    color: #1ca553 !important;
+    border: 1px solid #1ca553 !important;
+}
+
+/* categories carousel button */
+/* .slick-arrow-1 .slick-arrow{
+    top: 50% !important;
+} */
+.ltn__copyright-menu ul li {
+    font-family: var(--ltn__body-font);
+}
+
+/* product  */
+.product-title {
+    font-size: larger;
+}
+
+@media screen and (max-width: 500px) {
+
+    .ltn__utilize.ltn__utilize-cart-menu.ltn__utilize-open .mini-cart-sub-total .theme-btn-2.btn.btn-effect-2,
+    .ltn__utilize.ltn__utilize-cart-menu.ltn__utilize-open .mini-cart-sub-total .theme-btn-1.btn.btn-effect-1,
+    .modal-product-info .theme-btn-1.btn.btn-effect-1,
+    .modal-product-info .theme-btn-2.btn.btn-effect-2 {
+        width: 100% !important;
+        margin: 5px 0 !important;
+    }
+}
+
+.ltn__copyright-design p {
+    font-size: 14px;
+    font-weight: bold;
+}
+.ltn__product-item .product-img:after{transition: .4s;}
+.ltn__product-item:hover .product-img:after {
+    content: "";
+    background-color: hsla(0, 0%, 0%, 0.22);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.product-hover-action{z-index: 1;}
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* about.html */
+.ltn__feature-area .ltn__feature-item .ltn__feature-icon-title .ltn__feature-icon span img{
+    height: 80px;
+    width: 80px;
+}
