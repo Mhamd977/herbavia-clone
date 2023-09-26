@@ -25,7 +25,7 @@ $(document).ready(function () {
   
     geojson.features.forEach(function (marker) {
       var el = document.createElement("img");
-      el.src = "../../images/map-marker.svg";
+      el.src = "../image/contact/Map.svg";
       el.className = "map-marker-color";
       new mapboxgl.Marker(el).setLngLat(marker.geometry.coordinates).addTo(map);
     });
@@ -39,7 +39,7 @@ $(document).ready(function () {
         return jQuery("<span>")
           .addClass("map-marker")
           .append(function () {
-            var img = $("<img>").attr("src", "../../images/map-marker.svg"); // Replace with the path to your image
+            var img = $("<img>").attr("src", "../image/contact/Map.svg"); // Replace with the path to your image
             img.addClass("map-marker-color");
             return img;
           });
