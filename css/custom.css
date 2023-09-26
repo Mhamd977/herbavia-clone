@@ -209,7 +209,8 @@
 /* product detail */
 .product-detail-section .slick-next.slick-arrow,
 .product-detail-section .slick-prev.slick-arrow {
-    top: 100%;
+    display: none;
+    visibility: hidden;
 }
 
 .prouct-detail-section-title {
@@ -227,7 +228,14 @@
     padding: 0;
     list-style: none;
 }
-.social-icons li{
-    display: inline-block ;
+
+.social-icons li {
+    display: inline-block;
 }
+
 /* END social media icons container */
+
+
+/* zoom */
+
+/* END zoom image */
