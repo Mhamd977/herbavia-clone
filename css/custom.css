@@ -189,3 +189,16 @@
     height: 400px;
     width: 100%;
 }
+.map-marker-color{
+    height: 20px;
+}
+.blog .ltn__blog-item-3 .ltn__blog-img + .ltn__blog-brief {
+    margin-top: 0px;
+     width: 100%;
+} 
+.blog .ltn__blog-brief {
+    padding: 0 !important;
+}
+.blog-details .ltn__blog-brief img {
+    width: 100%;
+}
