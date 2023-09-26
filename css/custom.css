@@ -238,3 +238,15 @@
 section.ltn__blog-area.blog-details.py-5 .ltn__blog-brief {
     padding: 30px 0 0px !important;
 }
+ 
+.login-section .section-title-area {
+    padding-bottom: 0px;
+}
+.login-section .contact-form-box {
+    padding: 0px;
+    position: relative;
+    z-index: 1;
+}
+.register-area .section-title-area {
+    margin-bottom: 0px;
+}
