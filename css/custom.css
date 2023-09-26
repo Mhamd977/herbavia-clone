@@ -9,7 +9,7 @@
 
 .icon-bar {
     position: fixed;
-    z-index: 4;
+    z-index: 11;
     top: 60%;
     right: 0px;
     -webkit-transform: translateY(-50%);
@@ -140,7 +140,11 @@
     font-size: 14px;
     font-weight: bold;
 }
-.ltn__product-item .product-img:after{transition: .4s;}
+
+.ltn__product-item .product-img:after {
+    transition: .4s;
+}
+
 .ltn__product-item:hover .product-img:after {
     content: "";
     background-color: hsla(0, 0%, 0%, 0.22);
@@ -150,42 +154,132 @@
     left: 0;
     position: absolute;
 }
-.product-hover-action{z-index: 1;}
+
+.product-hover-action {
+    z-index: 1;
+}
 
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* about.html */
-.ltn__feature-area .ltn__feature-item .ltn__feature-icon-title .ltn__feature-icon span img{
+.ltn__feature-area .ltn__feature-item .ltn__feature-icon-title .ltn__feature-icon span img {
     height: 80px;
     width: 80px;
 }
-.ltn__breadcrumb-area::before{
+
+.ltn__breadcrumb-area::before {
     position: absolute;
     height: 100%;
     width: 100%;
     background-color: #00000096;
 }
+
 .ltn__breadcrumb-area .ltn__breadcrumb-inner .page-title {
     color: #fff;
 }
-.ltn__breadcrumb-list ul li{
+
+.ltn__breadcrumb-list ul li {
     color: #fff;
 
 }
-.ltn__breadcrumb-list ul li:last-child{
+
+.ltn__breadcrumb-list ul li:last-child {
     color: #fff;
 
 }
+
 .ltn__contact-address-item-3 .ltn__contact-address-icon img {
     max-width: 100%;
 }
+
 .ltn__contact-address-item-3 .ltn__contact-address-icon {
     margin-bottom: 0px !important;
 }
+
 .ltn__contact-address-item-3 {
     padding: 0px;
 }
+
 #map {
     height: 400px;
     width: 100%;
 }
+
+/* ///////////////////////////////////////// */
+/* product detail */
+.slick-next.slick-arrow,
+.slick-prev.slick-arrow {
+    top: 100%;
+}
+
+.prouct-detail-section-title {
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.prouct-detail-section-title-product-name::before {
+    content: ' > ';
+}
+
+/* social media icons container */
+.social-container {
+    display: inline-block;
+    width: fit-content;
+    padding: 1px 5px;
+    text-align: center;
+}
+
+.social-icons {
+    padding: 0;
+    list-style: none;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin: 0.15em;
+    position: relative;
+    font-size: 1.2em;
+}
+
+.social-icons i {
+    color: #fff;
+    position: absolute;
+    top: 21px;
+    left: 21px;
+    transition: all 265ms ease-out;
+}
+
+.social-icons a {
+    display: inline-block;
+}
+
+.social-icons a:before {
+    transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    content: " ";
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: block;
+    background: linear-gradient(45deg, #5eca89, #1ca553);
+    transition: all 265ms ease-out;
+}
+
+.social-icons a:hover:before {
+    transform: scale(0);
+    transition: all 265ms ease-in;
+}
+
+.social-icons a:hover i {
+    transform: scale(2.2);
+    -ms-transform: scale(2.2);
+    -webkit-transform: scale(2.2);
+    color: #5eca89;
+    background: -webkit-linear-gradient(45deg, #5eca89, #1ca553);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 265ms ease-in;
+}
+/* END social media icons container */
