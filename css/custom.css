@@ -159,3 +159,33 @@
     height: 80px;
     width: 80px;
 }
+.ltn__breadcrumb-area::before{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #00000096;
+}
+.ltn__breadcrumb-area .ltn__breadcrumb-inner .page-title {
+    color: #fff;
+}
+.ltn__breadcrumb-list ul li{
+    color: #fff;
+
+}
+.ltn__breadcrumb-list ul li:last-child{
+    color: #fff;
+
+}
+.ltn__contact-address-item-3 .ltn__contact-address-icon img {
+    max-width: 100%;
+}
+.ltn__contact-address-item-3 .ltn__contact-address-icon {
+    margin-bottom: 0px !important;
+}
+.ltn__contact-address-item-3 {
+    padding: 0px;
+}
+#map {
+    height: 400px;
+    width: 100%;
+}
