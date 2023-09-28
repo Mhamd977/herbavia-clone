@@ -1443,9 +1443,16 @@ ul {
   left: auto; }
 
 @media (min-width: 1350px) {
+  .slick-arrow-1 .slick-arrow {
+    top: 50% !important;
+    transform: translateY(-50%);
+}
   .slick-arrow-1:hover .slick-arrow {
     left: -50px;
-    right: auto; }
+    right: auto;
+    top: 50% !important;
+    transform: translateY(-50%);
+}
   .slick-arrow-1:hover .slick-next {
     right: -50px;
     left: auto; } }
@@ -14407,7 +14414,7 @@ input.cart-plus-minus-box {
   left: 0;
   top: 0;
   z-index: 9999999;
-  background-color: #071c1f;
+  background-color: #fff;
   width: 100%;
   height: 100%;
   display: -webkit-box;

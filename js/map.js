@@ -45,15 +45,5 @@ $(document).ready(function () {
           });
       });
   
-    $(".view-on-map-btn").click(function (e) {
-      var lat = parseFloat($(this).data("lat"));
-      var lng = parseFloat($(this).data("lng"));
-      map.flyTo({
-        center: [lat, lng],
-        zoom: 10,
-        speed: 1.2,
-        curve: 1,
-      });
-    });
   });
   

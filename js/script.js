@@ -9,19 +9,38 @@ $(document).ready(function () {
   $(document).on("click scroll resize", function () {
     eHFn();
   });
-});
- 
-$('.ltn__blog-img').magnificPopup({
-  delegate: 'a', // child items selector, by clicking on it popup will open
-  type: 'image',
-  removalDelay: 300,
-  gallery: {
-    enabled: true,
-    navigateByImgClick: true,
-    preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
-  },
-  zoom: {
-    enabled: true,
-    duration: 300 // don't foget to change the duration also in CSS
+
+  if ($("body").magnificPopup != undefined) {
+    $(".popup").magnificPopup({
+      type: "image",
+      removalDelay: 300,
+      gallery: {
+        enabled: true,
+        navigateByImgClick: true,
+        preload: [0, 1],
+      },
+      zoom: {
+        enabled: true,
+        duration: 300,
+      },
+    });
   }
+
+  $(".ltn__shop-details-small-img .single-small-img").on("click", function () {
+    let targetImg = $(this).find("img").attr("src");
+    $(".single-large-img").find("img").attr("src", targetImg);
+    $(".single-large-img").find("img").attr("xoriginal", targetImg);
+  });
+  
+
+  $(".xzoom").xzoom({
+    zoomWidth: 500,
+    zoomHeight: 500,
+    Xoffset: 15
+  });
 });
+
+
+
+
+
